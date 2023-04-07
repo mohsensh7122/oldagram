@@ -28,3 +28,32 @@ const posts = [
     }
 ]
 
+
+let container = document.getElementById('container');
+
+posts.forEach(post => {
+    let html = '';
+    html += `
+    <section>
+
+    <div class="user d-flex align-items-center">
+        <img src="${post.avatar}" alt="${post.name}'s portrait" class="user-img rounded-circle mx-2">
+        <div class="user-info d-flex flex-column">
+            <p class="my-0 bold">${post.name}</p>
+            <p class="my-0">${post.location}</p>
+        </div>
+    </div>
+    <img src="${post.post}" alt="A portrait of ${post.name}" class="image-bg img-fluid mt-2">
+    <div class="icons"">
+        <img src="images/icon-heart.png" alt="heart icon">
+        <img src="images/icon-comment.png" alt="comment icon">
+        <img src="images/icon-dm.png" alt="DM icon">
+    </div>
+    <p class="my-2">${post.likes} likes</p>
+    <p class="mt-2"><span class="bold"> ${post.username} </span><span class="comment">${post.comment}</span></p>
+    </section>
+    <hr>`
+
+    container.innerHTML += html;
+})
+

@@ -3,3 +3,54 @@ html, body {
     padding: 0;
 }
 
+.container:first-of-type {
+    padding-bottom: 20px;
+}
+
+
+.oldagram-logo {
+    width: 127px;
+}
+
+.user-avatar {
+    width: 34px;
+    height: 34px;
+}
+
+.container {
+    max-width: 375px;
+}
+
+.user {
+    width: 348px;
+}
+
+.user-info p {
+    font-size: 13px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.user-img {
+    width: 34px;
+    height: 34px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+section:first-of-type {
+    margin-top: -10px;
+}
+
+section:not(:first-of-type){
+    margin-top: 50px;
+}
